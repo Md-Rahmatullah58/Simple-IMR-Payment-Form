@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Form</title>
+    <style>
+        body{
+            background-color:rgb(241, 228, 234)
+        }
+        h1{
+            color: #e41818;
+        }
+        h2{
+            color:green
+        }
+        h3{
+            color:blue
+        }
+        fieldset{
+            color: saddlebrown;
+        }
+        select{
+            color:red
+        }
+        divbar{
+            color: #e41818;
+        }
+        input[type="submit"]{
+            background-color: rgb(239, 229, 229);
+            color:red;
+            padding: 12px 20px;
+            border:rosybrown
+            border-radius: 5px;
+            cursor: pointer
+            width: 100%;
+
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <h1>IMR Payment Form</h1>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Contact</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">LogIn/SignUp</a></li>
+        </ul>
+    </nav>
+    </header>
+    <form action="">
+        <h2>Contact Information</h2>
+        <p style="color:rgb(32, 42, 33)"><b>Name: *</b> <input type="text" name="name" required></p>
+        <fieldset>
+            <legend><b>Gender *</b> </legend>
+            <p>
+               <b>Male</b> <input type="radio" name="gender" id="male" required> <b>Female</b> <input type="radio" name="gender" id="female" required>       
+           </p>
+        </fieldset>
+        <p><b>Address: *</b><textarea name="address" id="address" cols="100" rows="9"></textarea></p>
+        <p><b>Email:*</b> <input type="email" name="email" id="email" required></p>
+        <p><b>Pincode: *</b> <input type="number" name="pincode" id="pincode" required></p>
+        <h3>Payment Information</h3>
+        <p style="color:blue"> <b>Card Type: * </b>
+            <select name="card type" id="card type" required>
+                <option value="">--select a Card Type--</option>
+                <option value="Visa">Visa</option>
+                <option value="Rupay">Rupay</option>
+                <option value="Mastercard">Mastercard</option>
+                <option value="Paytm">Paytm</option>
+                <option value="G-Pay">G-pay</option>
+            </select>
+        </p>
+        <p> <b>Card Number * </b> <input type="number" name="card number" id="card_number" required> </p>
+        <p> <b>Expiration Date: * </b> <input type="date" name="exp_date" id="exp_date" required></p>
+        <p><b>CVV * </b> <input type="password" name="cvv" required</p>
+        <p>OR</p>
+        <h3 style="color: red;">Crypto Payment Also Accepted Here</h3>
+        <p style="color:rgb(22, 149, 18)"> <b>Crypto Type: * </b>
+            <select name="Crypto type" id="Crypto type" required>
+                <option value="">--select a Crypto Type--</option>
+                <option value="BitCoin">BitCoin</option>
+                <option value="USDT">USDT</option>
+                <option value="ETH">ETH</option>
+                <option value="BNB">BNB</option>
+                <option value="WRX">WRX</option>
+                <option value="TRX">TRX</option>
+                <option value="LTC">LTC</option>
+                <option value="ShibaInu">ShibaInu</option>
+                </select>
+                <p> <b>Wallet ID Number * </b> <input type="numeric" name="wallet id numeric" id="wallet_id numeric" required> </p>
+        <p> <b>Expiration Date: * </b> <input type="date" name="exp_date" id="exp_date" required></p>
+        <p><b>Wallet Password * </b> <input type="password" name="Wallet Password" required</p>
+        <div class="divbar">
+        <p> <input type="Submit" value="Pay now"></p>
+        </div>
+    </form>
+    <footer>
+        <b>
+      <p style="color: rgb(11, 60, 11);">© 2023 Created By Md Rahmatullah</p>
+      </b>
+    </footer>
+</body>
+</html>
